@@ -9,7 +9,7 @@ logo: '/assets/images/logo.png'
 favicon: '/favicon.ico'
 google_analytics:
 mailchimp-list:
-baseurl: /
+baseurl:
 permalink: /:year/:month/:title/
 email: maxelblack@outlook.com
 disqus: 'demowebsite'
