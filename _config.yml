@@ -6,7 +6,9 @@ name: "Maxel's Pages"
 title: "Maxel's Pages"
 description: "Here is the archives of Maxel's Pages articles"
 logo: 'r/maxel.jpg'
-favicon: 'favicon.ico'
+favicon: 'r/maxel_360px.jpg'
+google_analytics:
+mailchimp-list:
 baseurl: /
 permalink: /:title/
 email: maxelblack@outlook.com
@@ -14,6 +16,7 @@ disqus: 'demowebsite'
 
 # Configure
 
+highlighter: none
 markdown: kramdown
 
 jekyll-archives:
@@ -57,4 +60,12 @@ adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "enabled"
+lazyimages: "disabled"
+
+# Post Author Box ("enabled" or "disabled")
+authorbox: "enabled"
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
