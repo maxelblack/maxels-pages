@@ -5,12 +5,12 @@
 name: "Maxel's Pages"
 title: "Maxel's Pages"
 description: "Here is the archives of Maxel's Pages articles"
-logo: 'r/maxel.jpg'
-favicon: 'r/maxel_360px.jpg'
+logo: '/assets/images/logo.png'
+favicon: '/favicon.ico'
 google_analytics:
 mailchimp-list:
 baseurl: /
-permalink: /:title/
+permalink: /:year/:month/:title/
 email: maxelblack@outlook.com
 disqus: 'demowebsite'
 
