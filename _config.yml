@@ -30,6 +30,7 @@ plugins:
   - jekyll-archives
   - jekyll-figure
 
+include: ["_pages"]
 exclude: [README.md]
 
 # Authers
