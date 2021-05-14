@@ -16,7 +16,7 @@ disqus: 'demowebsite'
 
 # Configure
 
-highlighter: none
+#highlighter: none
 markdown: kramdown
 
 jekyll-archives:
