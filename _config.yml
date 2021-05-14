@@ -4,7 +4,8 @@
 
 name: "Maxel's Pages"
 title: "Maxel's Pages"
-description: "Here is the archives of Maxel's Pages articles"
+author: "Maxel Black"
+description: "Here is the archives of Maxel's Pages articles."
 logo: '/assets/images/logo.png'
 favicon: '/favicon.ico'
 google_analytics:
