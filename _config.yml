@@ -31,7 +31,7 @@ plugins:
   - jekyll-figure
 
 include: ["_pages"]
-exclude: [README.md]
+exclude: [README.md, Gemfile, Gemfile.lock]
 
 # Authers
 
