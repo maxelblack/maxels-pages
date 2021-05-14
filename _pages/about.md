@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the Website
+title: 关于网站
 permalink: /about
 comments: false
 image: r/bg-new.jpeg
@@ -17,5 +17,5 @@ imageshadow: true
 
 ## 版权声明
 
-- 博客所有文章若无特别说明均遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){ target="_blank" } 协议。
+- 博客所有文章若无特别说明均遵循 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){:target="_blank"} 协议。
 - 若需用于商业用途，请直接联系博主获取商业许可。
