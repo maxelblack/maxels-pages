@@ -1,3 +1,5 @@
+remote_theme: wowthemesnet/jekyll-theme-memoirs
+
 # Website Info
 
 name: "Maxel's Pages"
@@ -10,8 +12,6 @@ permalink: /:year/:month/:title/
 email: maxelblack@outlook.com
 
 # Configure
-
-remote_theme: wowthemesnet/jekyll-theme-memoirs
 
 markdown: kramdown
 
