@@ -13,7 +13,7 @@ mailchimp-list:
 baseurl:
 permalink: /:year/:month/:title/
 email: maxelblack@outlook.com
-disqus: 'demowebsite'
+disqus: 'maxels-pages'
 
 # Configure
 
