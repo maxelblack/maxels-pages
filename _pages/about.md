@@ -13,7 +13,13 @@ imageshadow: true
 
 ~~由于博客刚刚建成，所以其实并没有如此多的内容！~~
 
-<a target="_blank" href="https://bootstrapstarter.com/jekyll-theme-memoirs/" class="btn btn-dark"> Follow me on GitHub &rarr;</a>
+<a target="_blank" href="https://github.com/maxelblack/" class="btn btn-dark">
+Follow me on GitHub &rarr;
+</a>
+
+<p><a target="_blank" href="https://maxelblack.dp7.link/">
+Another Version powered by WordPress in China Server
+</a></p>
 
 ## 版权声明
 
