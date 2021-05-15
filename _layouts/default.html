@@ -50,11 +50,21 @@
 <nav id="menu">
     <ul>
         <h3>Navigation</h3>
-        <li><a href="{{ site.baseurl }}/">主页</a></li>
-        <li><a href="{{ site.baseurl }}/about">关于网站</a></li>
-        <li><a href="{{ site.baseurl }}/authors">作者</a></li>
-        <li><a href="{{ site.baseurl }}/categories">文章分类</a></li>
-        <li><a href="{{ site.baseurl }}/contact">联系</a></li>
+        <li><a href="{{ site.baseurl }}/">
+            Home <a class="badge badge-dark">主页</a>
+        </a></li>
+        <li><a href="{{ site.baseurl }}/about">
+            About <a class="badge badge-dark">关于网站</a>
+        </a></li>
+        <li><a href="{{ site.baseurl }}/authors">
+            Authors <a class="badge badge-dark">作者</a>
+        </a></li>
+        <li><a href="{{ site.baseurl }}/categories">
+            Categories <a class="badge badge-dark">文章分类</a>
+        </a></li>
+        <li><a href="{{ site.baseurl }}/contact">
+            Contact <a class="badge badge-dark">联系</a>
+        </a></li>
     </ul>   
 </nav>
 
@@ -68,7 +78,7 @@
 
 <div class="container">
 
-    <!-- Site Logo/Name
+    <!-- Site Name
     ================================================== -->
    
     <p style="text-align:center;">
@@ -96,7 +106,7 @@
     <!-- Newsletter
     ================================================== -->
     <div class="newsletter text-center">
-        <span class="h4"><img src="{{ site.baseurl }}/{{ site.logo }}" class="newsletter-logo" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <span class="h4"><img src="{{ site.baseurl }}/{{ site.logo }}" class="newsletter-logo" alt="{{site.title}}"> &nbsp; 不错过每一篇文章，现在订阅</span>
         <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
             <div class="mc-field-group d-inline-flex">
             <input type="email" placeholder="Your e-mail" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
@@ -117,7 +127,7 @@
                 Copyright © {{ site.time | date: "%Y" }} {{ site.author }}
             </div>
             <div class="col-md-6 col-sm-12 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs</a> Jekyll Theme
             </div>
         </div>
     </div>
