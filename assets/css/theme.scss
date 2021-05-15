@@ -35,6 +35,16 @@ img {
 h1,h2,h3,h4,h5,h6 {
     font-weight:700;
 }
+
+tr,td {
+    border: 1px solid;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+table {
+    border: 1px solid;
+}
+
 .site-content {
     padding-top:50px;
 }
