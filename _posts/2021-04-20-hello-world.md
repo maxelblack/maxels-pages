@@ -2,6 +2,7 @@
 layout: post
 title: "Hello, world!"
 author: maxelbk
+image: /p/bg-new.jpeg
 categories: [ "日常" ]
 ---
 
