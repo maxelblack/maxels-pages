@@ -18,6 +18,8 @@ lisence: '<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa
 
 # Configure
 
+excerpt_separator: <!--MORE-->
+
 #highlighter: none
 markdown: kramdown
 

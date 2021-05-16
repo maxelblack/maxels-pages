@@ -8,7 +8,7 @@ image: r/pic/SCS_ARCHISO_202104.png
 
 At first,ARCH IS THE BEST!
 
-按照 [Arch Wiki](https://wiki.archlinux.org/title/Arch_Linux){:target="_blank"} 的说法，Arch Linux 是一个简洁、现代、实用且以用户为中心的 GNU/Linux 发行版，采用滚动更新模式，尽全力提供最新的稳定版软件。
+按照 [Arch Wiki](https://wiki.archlinux.org/title/Arch_Linux){:target="_blank"} 的说法，Arch Linux 是一个简洁、现代、实用且以用户为中心的 GNU/Linux 发行版，采用滚动更新模式，尽全力提供最新的稳定版软件。<!--MORE-->
 
 鉴于 Arch Wiki 的安装指引有些许复杂，于是就写了这一篇指引，帮助想要一个完全自定义化的系统的 Linux 入门级爱好者更快配置一个可以满足日常使用的 Arch Linux 。（大佬就不要看这篇指引了，直接看 [Arch Wiki](https://wiki.archlinux.org/title/Installation_guide){:target="_blank"} 更加合适）
 
