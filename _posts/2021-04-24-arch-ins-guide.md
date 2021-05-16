@@ -3,6 +3,7 @@ layout: post
 title: "Arch Linux 安装指引"
 author: maxelbk
 categories: [ "Arch Linux", "技术", "教程" ]
+image: r/pic/SCS_ARCHISO_202104.png
 ---
 
 At first,ARCH IS THE BEST!
