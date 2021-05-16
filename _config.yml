@@ -5,12 +5,12 @@
 name: "Maxel's Pages"
 title: "Maxel's Pages"
 author: "Maxel Black"
-description: "Code & write what we want.\nHere is a simple blog written by a simple person."
+description: "Code & write what we want.<br />Here is a simple blog written by a simple person."
 logo: '/assets/images/logo.png'
 favicon: '/favicon.ico'
 google_analytics:
 mailchimp-list:
-baseurl:
+baseurl: https://maxelblack.github.io
 permalink: /:year/:month/:title/
 email: maxelblack@outlook.com
 disqus: 'maxels-pages'
