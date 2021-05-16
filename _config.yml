@@ -20,6 +20,7 @@ lisence: '<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa
 
 excerpt_separator: "<!--MORE-->"
 
+encoding: UTF-8
 #highlighter: none
 markdown: kramdown
 

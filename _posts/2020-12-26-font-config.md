@@ -14,7 +14,7 @@ categories: [ "技术", "Linux" ]
 后来 [JackieCat](https://www.jackiecat.xyz){:target="_blank"} 在 Arch Wiki 翻到了一个更完善的解决方案并分享出了地址, 可以参考一下:
 - [本地化/简体中文#中文字体配置 - ArchWiki](https://wiki.archlinux.org/index.php/Localization_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29/Simplified_Chinese_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29#%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE){:target="blank"}
 
-### 1. 找到个人配置文件位置
+### 找到个人配置文件位置
 
 `fonts.conf` 是 FontConfig 对于单独用户字体的配置文件名称, 一般在每个用户的主目录中.
 
@@ -22,7 +22,7 @@ categories: [ "技术", "Linux" ]
 
 P.S.: 最好不要修改 `/etc` 中的全局字体配置文件, 在刷新字体缓存时这个文件会被更新, 所有修改都会失效.
 
-### 2. 修改配置文件
+### 修改配置文件
 
 用任意编辑器打开 `fonts.conf`, 在 `<fontconfig>` 标记中添加 `<alias>` 标记, 再在其中添加 `<family>` 和 `<prefer>` 标记
 
@@ -37,6 +37,12 @@ P.S.: 最好不要修改 `/etc` 中的全局字体配置文件, 在刷新字体�
     <family>Noto Sans CJK SC</family>
     <family>Noto Sans CJK JP</family>
 </prefer>
+```
+
+修改保存之后更新字体缓存使配置生效：
+
+```bash
+sudo fc-cache -fv
 ```
 
 示例配置:
@@ -63,7 +69,7 @@ P.S.: 最好不要修改 `/etc` 中的全局字体配置文件, 在刷新字体�
 
 P.S.: `Noto Sans Display` 是 `Noto Sans` 家族的一款适合显示器的字体, 比默认看起来更舒适一些.
 
-### 3. 检查是否生效
+### 检查是否生效
 
 终端执行以下代码(其中 `sans-serif` 可以换成任意上方设置了优先级的字体族名称):
 ```sh
