@@ -10,7 +10,8 @@ logo: '/assets/images/logo.png'
 favicon: '/favicon.ico'
 google_analytics:
 mailchimp-list:
-baseurl: https://maxelblack.github.io
+url: https://maxelblack.github.io
+baseurl:
 permalink: /:year/:month/:title/
 email: maxelblack@outlook.com
 disqus: 'maxels-pages'
