@@ -241,7 +241,7 @@ grub-install --target=x86_64-efi --efi-dircetory=/efi --boot-directory=/mnt/boot
 ##### 传统引导
 
 ```bash
-grub-install --target=i386-pc --boot-directory=/mnt/boot /dev/disk
+grub-install --target=i386-pc --boot-directory=/mnt/boot disk
 ```
 
 其中 `disk` 即上文分区时提到的硬盘，也就是根目录分区所在的硬盘（例如，根目录分区为 `/dev/sda1` ，则这里的 `disk` 就是 `/dev/sda` ）。
