@@ -49,7 +49,7 @@ Arch官方源服务器在国外，国内速度相当慢（每秒几十KB的节�
 
 #### 进入 Live 环境
 
-首先确定你的主板是否支持 [UEFI](https://baike.baidu.com/item/%E7%BB%9F%E4%B8%80%E5%8F%AF%E6%89%A9%E5%B1%95%E5%9B%BA%E4%BB%B6%E6%8E%A5%E5%8F%A3){:target="_blank"} 引导 ，这里推荐三种方式：
+首先确定你的主板是否支持 [UEFI](https://zh.wikipedia.org/wiki/%E7%B5%B1%E4%B8%80%E5%8F%AF%E5%BB%B6%E4%BC%B8%E9%9F%8C%E9%AB%94%E4%BB%8B%E9%9D%A2){:target="_blank"} 引导 ，这里推荐三种方式：
 
 - 通过系统的启动方式
   - Windows：Win + R 打开 “运行” 窗口，输入 msinfo32 并回车，在弹出的窗口中找到 “BIOS模式” 这一项，若为 “UEFI” 则说明支持 UEFI 引导，若为 “传统” 则不一定支持。
