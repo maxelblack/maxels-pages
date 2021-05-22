@@ -89,13 +89,13 @@ P.S.: 这里有一个坑，你的主板也许同时支持 传统 和 UEFI 两种
 
 可以 ping 百度来测试一下互联网连接：
 
-```bash
+```shell
 ping www.baidu.com
 ```
 
 若在中国大陆以外的区域也可以 ping Google：
 
-```bash
+```shell
 ping www.google.com
 ```
 
@@ -105,7 +105,7 @@ ping www.google.com
 
 使用 `timedatectl` 确保系统时间准确：
 
-```bash
+```shell
 timedatectl set-ntp true
 ```
 
@@ -144,7 +144,7 @@ P.S.: Arch Wiki 有很多 Linux 分区软件的使用方法，如 [fdisk](https:
 
 使用 mkfs 创建文件系统，其中 `fsname` 为要创建的文件系统名：
 
-```bash
+```shell
 mkfs.fsname diskX
 ```
 
@@ -152,7 +152,7 @@ mkfs.fsname diskX
 
 使用 `mount` 命令来挂载分区，其中 `mountpoint` 是挂载点（即一个实际存在的目录）：
 
-```bash
+```shell
 mount diskX mountpoint
 ```
 
@@ -202,7 +202,7 @@ Server = https://opentuna.cn/archlinux/$repo/os/$arch
 
 首先使用 `pacstrap` 脚本安装基本系统组件：
 
-```bash
+```shell
 pacstrap /mnt base linux linux-firmware
 ```
 
@@ -212,7 +212,7 @@ P.S.: `linux` 软件包即 Arch Linux 官方的系统内核，这里可以替换
 
 使用 `genfstab` 脚本生成 `fstab` 文件，这个文件记录了分区的默认挂载配置：
 
-```bash
+```shell
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
@@ -224,7 +224,7 @@ Linux 下的引导加载程序有很多，这里只介绍 GRUB 的安装方法�
 
 首先，安装 `grub` 软件包：
 
-```bash
+```shell
 pacman -S grub
 ```
 
@@ -232,7 +232,7 @@ pacman -S grub
 
 ##### UEFI 引导
 
-```bash
+```shell
 grub-install --target=x86_64-efi --efi-dircetory=/efi --boot-directory=/mnt/boot --bootloader-id="Arch Linux"
 ```
 
@@ -240,7 +240,7 @@ grub-install --target=x86_64-efi --efi-dircetory=/efi --boot-directory=/mnt/boot
 
 ##### 传统引导
 
-```bash
+```shell
 grub-install --target=i386-pc --boot-directory=/mnt/boot disk
 ```
 
@@ -250,7 +250,7 @@ grub-install --target=i386-pc --boot-directory=/mnt/boot disk
 
 首先进入 chroot 环境（可以近似看作直接在 LiveCD 进入新系统的环境）：
 
-```bash
+```shell
 arch-chroot /mnt
 ```
 
@@ -260,13 +260,13 @@ arch-chroot /mnt
 
 将 `/usr/share/zoneinfo` 目录中的时区配置软链接到 `/etc/localtime` ，例如：
 
-```bash
+```shell
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime #将时区设置为上海
 ```
 
 运行 hwclock 同步硬件时间并生成 `/etc/adjtime` 文件：
 
-```bash
+```shell
 hwclock --systohc
 ```
 
@@ -280,7 +280,7 @@ P.S.: 大部分操作系统都将硬件时间作为 [UTC 时间](https://zh.wiki
 
 然后在 `/etc/locale.conf` 文件中设定 `LANG` 变量：
 
-```bash
+```shell
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 ```
 
@@ -288,7 +288,7 @@ echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 
 使用 `/etc/hostname` 设定主机名：
 
-```bash
+```shell
 echo "myhostname" >> /etc/hostname
 ```
 
@@ -306,7 +306,7 @@ echo "myhostname" >> /etc/hostname
 
 同时需要安装并启用一个网络服务，用于管理网络连接，这里推荐使用 NetworkManager ：
 
-```bash
+```shell
 pacman -S networkmanager
 systemctl enable NetworkManager
 ```
@@ -323,7 +323,7 @@ Arch Linux 使用 Pacman 管理软件包，可以通过 `pacman -S package` 来�
 
 首先设置 root 用户的密码：
 
-```bash
+```shell
 passwd
 ```
 
@@ -333,7 +333,7 @@ passwd
 
 在 Linux 中，未启用 SELinux 时，root 用户具有无视一切限制的特殊权限，因此十分危险（比如不小心手残输入了 `rm -rf /*` ，系统直接就没了），日常使用不建议直接以 root 用户身份登录。这样就需要新建一个普通用户用于日常使用：
 
-```bash
+```shell
 useradd -m -G wheel username
 ```
 
@@ -341,13 +341,13 @@ useradd -m -G wheel username
 
 设置这个用户的密码：
 
-```bash
+```shell
 passwd username
 ```
 
 使用 `visudo` 编辑 `sudoers` 文件，启用 `wheel` 用户组的 sudo 权限：
 
-```bash
+```shell
 EDITOR=vim visudo # 其中 vim 可以替换为其他已安装的编辑器
 ```
 
@@ -355,7 +355,7 @@ EDITOR=vim visudo # 其中 vim 可以替换为其他已安装的编辑器
 
 如果安装了 GRUB ，则需要在 `grub` 目录中生成配置文件：
 
-```bash
+```shell
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
