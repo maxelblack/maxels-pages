@@ -27,11 +27,13 @@ P.S.: 最好不要修改 `/etc` 中的全局字体配置文件, 在刷新字体�
 用任意编辑器打开 `fonts.conf`, 在 `<fontconfig>` 标记中添加 `<alias>` 标记, 再在其中添加 `<family>` 和 `<prefer>` 标记
 
 `<family>` 标记中指定要设置优先级的字体族, 如:
+
 ```xml
 <family>sans-serif</family>
 ```
 
 `<prefer>` 标记使用多个 `<family>` 子标记来指定字体优先级顺序, 如:
+
 ```xml
 <prefer>
     <family>Noto Sans CJK SC</family>
@@ -41,11 +43,12 @@ P.S.: 最好不要修改 `/etc` 中的全局字体配置文件, 在刷新字体�
 
 修改保存之后更新字体缓存使配置生效：
 
-```bash
+```shell
 sudo fc-cache -fv
 ```
 
 示例配置:
+
 ```xml
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'urn:fontconfig:fonts.dtd'>
