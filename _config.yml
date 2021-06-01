@@ -8,14 +8,15 @@ author: "Maxel Black"
 description: "Code & write what we want.<br />Here is a simple blog written by a simple person."
 logo: '/assets/images/logo.png'
 favicon: '/favicon.ico'
-google_analytics:
-mailchimp-list:
 url: https://maxelblack.github.io
 baseurl:
 permalink: /:year/:month/:title/
 email: maxelblack@outlook.com
 disqus: 'maxels-pages'
+google_analytics:
+google_search_content: "vW3qvqkUTdYACYAKPz1FvhCCQP4lUGCWh8OMdafZKcs"
 lisence: '<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
+mailchimp-list:
 
 # Configure
 
