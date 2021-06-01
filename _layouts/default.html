@@ -8,6 +8,11 @@
 
 <title>{{ page.title }} | {{site.name}}</title>
 
+{% if page.home == 'true' %}
+<!-- Google Search Authentication -->
+<meta name="google-site-verification" content="vW3qvqkUTdYACYAKPz1FvhCCQP4lUGCWh8OMdafZKcs" />
+{% endif %}
+
 {% seo %}
     
 <link href="{{ site.baseurl }}/assets/css/prism.css" rel="stylesheet">
