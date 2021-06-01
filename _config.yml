@@ -43,7 +43,7 @@ plugins:
   - jekyll-archives
   - jekyll-figure
 
-include: ["_pages"]
+include: ["_pages", "r/sitemap.txt"]
 exclude: [README.md, Gemfile, Gemfile.lock]
 
 # Authers
