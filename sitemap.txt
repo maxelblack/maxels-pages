@@ -1,9 +1,0 @@
-{{ site.url }}{{ site.baseurl }}/
-
-{% for post in site.posts %}
-{{ post.url | prepend: site.baseurl | prepend: site.url }}
-{% endfor %}
-
-{{ site.url }}{{ site.baseurl }}/about/
-{{ site.url }}{{ site.baseurl }}/categories/
-{{ site.url }}{{ site.baseurl }}/contact/
