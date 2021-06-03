@@ -323,7 +323,7 @@ P.S.: `localdomain` 若无特殊需求可以直接写为 `localdomain` ，通常
 
 Arch Linux 使用 Pacman 管理软件包，可以通过 `pacman -S package` 来安装软件，其中 `package` 是软件包名或包组名（可以通过直接安装包组来同时安装多个软件包）。
 
-常用的软件包包括 `vim`, `nano`, `base-devel`, `pulseaudio` 等。
+命令行终端下常用的软件包包括 `nano`(文本编辑器), `tmux`(分屏终端), `screen`(后台任务终端) 等，另外也可以参照[这里](https://wiki.archlinux.org/title/Desktop_environment)安装一个桌面环境以方便使用。
 
 #### 用户
 
