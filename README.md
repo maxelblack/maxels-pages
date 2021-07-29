@@ -1,10 +1,10 @@
-# maxelblack.github.io
-Maxel Black's personal blog website.
+# A personal blog written by Maxel Black
 
 https://maxelblack.github.io
 
-Powered by Jekyll and a modified copy of [Memoirs](https://github.com/wowthemesnet/jekyll-theme-memoirs) theme.
+- Language: *Simplified Chinese*
+- Locale: *China Mainland*
 
-The modified theme licensed [MIT](https://github.com/maxelblack/maxelblack.github.io/blob/main/LICENSE), and the license of blog articles is [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
+The blog is powered by GitHub Pages, Jekyll and a modified copy of [Memoirs](https://github.com/wowthemesnet/jekyll-theme-memoirs) theme. The modified theme licensed [MIT](https://github.com/maxelblack/maxelblack.github.io/blob/main/LICENSE) and the license of blog articles is [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
-The main language of this blog is *Simplified Chinese* . The main locale is *China Mainland* .
+This means you are free to modify and distribute copies of this repository except `_posts` directory under MIT license, the distribution of files in `_posts` directory follows the above CC license.
