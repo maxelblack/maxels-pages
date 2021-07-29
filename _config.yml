@@ -10,7 +10,7 @@ logo: '/assets/images/logo.png'
 favicon: '/favicon.ico'
 url: https://maxelblack.github.io
 baseurl:
-permalink: /:year/:month/:title/
+permalink: /:year/:month/:title
 email: maxelblack@outlook.com
 disqus: 'maxels-pages'
 google_analytics: "G-0PRRN86LQ0"
