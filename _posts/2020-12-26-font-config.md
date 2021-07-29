@@ -18,7 +18,7 @@ categories: [ "技术", "Linux" ]
 
 `fonts.conf` 是 FontConfig 对于单独用户字体的配置文件名称, 一般在每个用户的主目录中.
 
-不同的发行版这个文件的位置甚至可能不一样, 我的 ArchLinux 是在 `~/.config/fontconfig` 目录. (Arch Wiki 中指出正常情况下是在 `$XDG_CONFIG_HOME/fontconfig` 目录, 各大比较常规的发行版都可以试一下这个目录, CentOS 之类超级旧版或 Ubuntu 之类深度定制就不要尝试了, 乖乖 Google 反倒效率更高)
+不同的发行版这个文件的位置甚至可能不一样, 我的 ArchLinux 是在 `~/.config/fontconfig` 目录. (Arch Wiki 中指出正常情况下是在 `$XDG_CONFIG_HOME/fontconfig` 目录, 各大比较常规的发行版都可以试一下这个目录, CentOS 之类超级旧版就不要尝试了, 乖乖 Google 反倒效率更高)
 
 P.S.: 最好不要修改 `/etc` 中的全局字体配置文件, 在刷新字体缓存时这个文件会被更新, 所有修改都会失效.
 
