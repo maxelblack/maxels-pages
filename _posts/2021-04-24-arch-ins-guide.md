@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Arch Linux 安装指引"
+permalink: /arch-ins-guide
 author: maxelbk
 categories: [ "Linux", "技术", "教程" ]
 image: r/pic/SCS_ARCHISO_202104.png
