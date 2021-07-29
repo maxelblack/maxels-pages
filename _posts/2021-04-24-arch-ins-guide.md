@@ -2,11 +2,11 @@
 layout: post
 title: "Arch Linux 安装指引"
 author: maxelbk
-categories: [ "Arch Linux", "技术", "教程" ]
+categories: [ "Linux", "技术", "教程" ]
 image: r/pic/SCS_ARCHISO_202104.png
 ---
 
-At first,ARCH IS THE BEST!
+<div style="font-size:1.5em;">At first, ARCH IS THE BEST!</div>
 
 按照 [Arch Wiki](https://wiki.archlinux.org/title/Arch_Linux){:target="_blank"} 的说法，Arch Linux 是一个简洁、现代、实用且以用户为中心的 GNU/Linux 发行版，采用滚动更新模式，尽全力提供最新的稳定版软件。<!--MORE-->
 
