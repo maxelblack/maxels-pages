@@ -29,7 +29,7 @@ toc: true
 
 ## 开始
 
-#### 下载镜像
+### 下载镜像
 
 Arch官方源服务器在国外，国内速度相当慢（每秒几十KB的节奏），故建议从镜像源下载，这里推荐 [OpenTUNA](https://opentuna.cn/){:target="_blank"} 。
 
@@ -39,7 +39,7 @@ Arch官方源服务器在国外，国内速度相当慢（每秒几十KB的节�
 
 下载之后建议校验一下文件是否完整（文件的Hash值一般会被放在镜像源同一目录下），当然如果不会也可以跳过这一步。
 
-#### 制作可启动U盘
+### 制作可启动U盘
 
 这里有两种方式可以选：**直接将ISO文件写入U盘** 或 **使用 [Ventoy](https://ventoy.net/) 引导U盘上的ISO文件** 。此处介绍第一种方式，有关第二种请参考 [Ventoy 官方文档](https://ventoy.net/doc_start.html){:target="_blank"} 。
 
@@ -49,7 +49,7 @@ Arch官方源服务器在国外，国内速度相当慢（每秒几十KB的节�
 
 点击 **Flash from file** 并选择刚刚下载的ISO文件，然后点击 **Select target** 选择要写入的U盘，最后点击 **Flash!** 开始写入，等待进度完成即可。
 
-#### 进入 Live 环境
+### 进入 Live 环境
 
 首先确定你的主板是否支持 [UEFI](https://zh.wikipedia.org/wiki/%E7%B5%B1%E4%B8%80%E5%8F%AF%E5%BB%B6%E4%BC%B8%E9%9F%8C%E9%AB%94%E4%BB%8B%E9%9D%A2){:target="_blank"} 引导 ，这里推荐三种方式：
 
@@ -77,7 +77,7 @@ P.S.: 这里有一个坑，你的主板也许同时支持 传统 和 UEFI 两种
 
 ## 安装
 
-#### 连接互联网
+### 连接互联网
 
 - 有线网络（大多数时候是这种）：
   - Live 环境默认启用了 DHCP 功能，一般会自动连接，不需要其他配置，直接跳过连接互联网这一步即可。（当然如果网线没插的话我帮不了你）
@@ -103,7 +103,7 @@ ping www.google.com
 
 如果一直输出正常的数据包返回信息，则表示网络连接没有问题，使用 Ctrl + C 退出 ping 测试。
 
-#### 调整时间
+### 调整时间
 
 使用 `timedatectl` 确保系统时间准确：
 
@@ -111,9 +111,9 @@ ping www.google.com
 timedatectl set-ntp true
 ```
 
-#### 硬盘分区
+### 硬盘分区
 
-##### 找到你的目标设备（即要安装 Arch Linux 的硬盘）
+#### 找到你的目标设备（即要安装 Arch Linux 的硬盘）
 
 在 Linux 中，硬盘若被系统识别到，就会被分配为一个[块设备](https://zh.wikipedia.org/wiki/%E8%AE%BE%E5%A4%87%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F#%E5%9D%97%E8%AE%BE%E5%A4%87){:target="_blank"}，类似 `/dev/sda` 、 `/dev/nvme0n1` 或 `/dev/mmcblk0` 等。
 
@@ -123,7 +123,7 @@ timedatectl set-ntp true
 
 P.S.: 设备文件一般位于 `/dev` 目录中，若不在该目录中（即路径不以 `/dev` 开头）则可能不是设备文件。
 
-##### 创建和修改分区
+#### 创建和修改分区
 
 **这一步一定要仔细仔细再仔细，否则你的数据很可能就全没了！**
 
@@ -142,7 +142,7 @@ Linux 下的分区软件有很多（小白建议使用 **cfdisk** ），这里�
 
 P.S.: Arch Wiki 有很多 Linux 分区软件的使用方法，如 [fdisk](https://wiki.archlinux.org/title/Fdisk) 、 [parted](https://wiki.archlinux.org/title/Parted){:target="_blank"} 等，[这里](https://wiki.archlinux.org/title/Partitioning#Partitioning_tools){:target="_blank"}（[中文页面](https://wiki.archlinux.org/title/Partitioning_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29#%E5%88%86%E5%8C%BA%E5%B7%A5%E5%85%B7){:target="_blank"}）甚至有一个基本上所有能用的分区工具列表。
 
-##### 格式化分区（即创建文件系统）
+#### 格式化分区（即创建文件系统）
 
 使用 mkfs 创建文件系统，其中 `fsname` 为要创建的文件系统名：
 
@@ -150,7 +150,7 @@ P.S.: Arch Wiki 有很多 Linux 分区软件的使用方法，如 [fdisk](https:
 mkfs.fsname diskX
 ```
 
-##### 挂载分区
+#### 挂载分区
 
 使用 `mount` 命令来挂载分区，其中 `mountpoint` 是挂载点（即一个实际存在的目录）：
 
@@ -164,7 +164,7 @@ Arch Linux 的安装常将根目录分区挂载到 /mnt 文件夹。
 
 P.S.: 挂载多个分区时，必须按照挂载点**由父目录到子目录的顺序**。比如，若需要将两个分区挂载到 `/mnt` 和 `/mnt/home` 这两个目录，则需要先挂载 `/mnt` 对应的分区，后挂载 `/mnt/home` 对应的分区，否则会报出类似“目录正忙”的错误信息。如果两个挂载点属于同级目录则无此需求。
 
-##### 建议的分区布局
+#### 建议的分区布局
 
 如果对 Linux 的文件分布不是很了解，推荐使用以下的分区布局（假设你有一整个空闲的硬盘用来安装），表格由上到下的顺序即为分区在硬盘上建立的顺序。
 
@@ -186,7 +186,7 @@ P.S.: 挂载多个分区时，必须按照挂载点**由父目录到子目录的
 
 P.S.: 如果内存比较小，或者单纯硬盘空闲空间太多了，可以另外添加一个空分区以便之后配置**交换分区**。当然这不是必要的，因为有无交换分区并不影响系统的功能，而且交换空间也可以放在一个文件而不是单独的分区上。
 
-#### 配置镜像源
+### 配置镜像源
 
 在安装之前记得看一下 `/etc/pacman.d/mirrorlist` 文件，将你想用的镜像服务器放在最上方。这里仍旧是推荐使用 [OpenTUNA](https://opentuna.cn/){:target="_blank"} 镜像源，在文件最上方添加：
 
@@ -202,7 +202,7 @@ pacman -Sy
 
 来更新镜像源信息。
 
-#### 安装基本系统
+### 安装基本系统
 
 挂载根目录并配置好镜像源之后，就可以正式开始安装了。
 
@@ -216,7 +216,7 @@ pacstrap /mnt base linux linux-firmware
 
 P.S.: `linux` 软件包即 Arch Linux 官方的系统内核，这里可以替换为社区的其他内核软件包（比如 `linux-zen` ）以获得不同的特性。若是虚拟机可以去掉 `linux-firmware` 软件包，这个软件包主要为硬件设备提供基本的驱动程序。
 
-#### 生成 Fstab
+### 生成 Fstab
 
 使用 `genfstab` 脚本生成 `fstab` 文件，这个文件记录了分区的默认挂载配置：
 
@@ -226,7 +226,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 强烈建议生成之后查看一下文件 `/mnt/etc/fstab` ，确认配置无误后再继续操作。若配置有误，Arch Linux 可能无法启动。
 
-#### 安装引导加载程序
+### 安装引导加载程序
 
 Linux 下的引导加载程序有很多，这里只介绍 GRUB 的安装方法（~~当然是因为我只会用GRUB~~）。
 
@@ -238,7 +238,7 @@ pacman -S grub
 
 然后向硬盘安装 GRUB ，这里根据引导方式有不同的安装方法。
 
-##### UEFI 引导
+#### UEFI 引导
 
 ```shell
 grub-install --target=x86_64-efi --efi-dircetory=/efi --boot-directory=/mnt/boot --bootloader-id="Arch Linux"
@@ -246,7 +246,7 @@ grub-install --target=x86_64-efi --efi-dircetory=/efi --boot-directory=/mnt/boot
 
 其中 `/efi` 需要替换成你的 EFI 分区挂载位置（若按照上文建议的分区布局挂载则无需替换）。
 
-##### 传统引导
+#### 传统引导
 
 ```shell
 grub-install --target=i386-pc --boot-directory=/mnt/boot disk
@@ -264,7 +264,7 @@ arch-chroot /mnt
 
 其中 `/mnt` 也需要换成你的根目录挂载位置（如果你不是挂载在 `/mnt` 的话）。
 
-#### 时区
+### 时区
 
 将 `/usr/share/zoneinfo` 目录中的时区配置软链接到 `/etc/localtime` ，例如：
 
@@ -280,7 +280,7 @@ hwclock --systohc
 
 P.S.: 大部分操作系统都将硬件时间作为 [UTC 时间](https://zh.wikipedia.org/wiki/%E5%8D%8F%E8%B0%83%E4%B8%96%E7%95%8C%E6%97%B6){:target="_blank"} ，Linux 也不例外。但 Windows 比较特殊，它默认将硬件时间视为本地时间，因此如果你的电脑上有 Windows 系统，请参考[这里](https://wiki.archlinux.org/title/System_time#UTC_in_Microsoft_Windows){:target="_blank"}（[中文页面](https://wiki.archlinux.org/title/System_time_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29#Windows_%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8_UTC){:target="_blank"}）将 Windows 的硬件时间设置为 UTC 时间并关闭 Windows 的自动时间同步。
 
-#### 本地化（语言和区域）
+### 本地化（语言和区域）
 
 用任意编辑器编辑 `/etc/locale.gen` ，移除想要启用的区域前的 `#` 符号（简体中文用户建议启用 `zh_CN.UTF-8` 和 `en_US.UTF-8` ，同时不建议在 Linux 启用任何不是 `UTF-8` 编码的语言）。
 
@@ -292,7 +292,7 @@ P.S.: 大部分操作系统都将硬件时间作为 [UTC 时间](https://zh.wiki
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 ```
 
-#### 网络
+### 网络
 
 使用 `/etc/hostname` 设定主机名：
 
@@ -321,13 +321,13 @@ systemctl enable NetworkManager
 
 P.S.: `localdomain` 若无特殊需求可以直接写为 `localdomain` ，通常不需要替换为其他内容。
 
-#### 常用软件
+### 常用软件
 
 Arch Linux 使用 Pacman 管理软件包，可以通过 `pacman -S package` 来安装软件，其中 `package` 是软件包名或包组名（可以通过直接安装包组来同时安装多个软件包）。
 
 命令行终端下常用的软件包包括 `nano`(文本编辑器), `tmux`(分屏终端), `screen`(后台任务终端) 等，另外也可以参照[这里](https://wiki.archlinux.org/title/Desktop_environment)安装一个桌面环境以方便使用。
 
-#### 用户
+### 用户
 
 首先设置 root 用户的密码：
 
@@ -375,7 +375,7 @@ EDITOR=vim visudo # 其中 vim 可以替换为其他已安装的编辑器
 
 当然，不建议这样做，因为这样会让以此用户执行的所有 `sudo` 都不需要输密码，万一哪个脚本里有 `sudo rm -rf /*` 之类的，**B O O M**
 
-#### GRUB 配置文件
+### GRUB 配置文件
 
 如果安装了 GRUB ，则需要在 `grub` 目录中生成配置文件：
 
