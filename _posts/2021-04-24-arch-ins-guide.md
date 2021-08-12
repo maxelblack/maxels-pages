@@ -5,6 +5,7 @@ permalink: /linux/arch-inst
 author: maxelbk
 categories: [ "Linux", "技术", "教程" ]
 image: r/pic/SCS_ARCHISO_202104.png
+toc: true
 ---
 
 <div style="font-size:1.5em;">At first, ARCH IS THE BEST!</div>
