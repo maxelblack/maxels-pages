@@ -5,7 +5,8 @@
 name: "Maxel's Pages"
 title: "Maxel's Pages"
 author: "Maxel Black"
-description: "Code & write what we want.<br />Here is a simple blog written by a simple person."
+description: "Code & write what we want."
+introduction: "Here is a simple blog written by a simple person."
 logo: '/assets/images/logo.png'
 favicon: '/favicon.ico'
 url: https://maxelblack.github.io
@@ -34,7 +35,24 @@ jekyll-archives:
     category: '/category/:name/'
 
 paginate: 6
-paginate_path: /page:num/
+paginate_path: /?page=:num/
+
+navigation:
+  - name: "Home"
+    url: /
+    tip: "主页"
+  - name: "About"
+    url: /about
+    tip: "关于网站"
+  - name: "Authors"
+    url: /authors
+    tip: "作者"
+  - name: "Categories"
+    url: /categories
+    tip: "文章分类"
+  - name: "RSS Feed"
+    url: /feed.xml
+    tip: "订阅"
 
 plugins:
   - jekyll-paginate
@@ -63,8 +81,8 @@ authors:
 # Adsense (change to "enabled" to activate, also your client id and ad slot.)
 # Create a new ad unit from your Adsense account to get the slot.
 adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
+adsense-data-ad-client:
+adsense-data-ad-slot:
 
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "enabled"

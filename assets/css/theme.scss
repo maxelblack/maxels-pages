@@ -3,7 +3,7 @@
 ---
 
 $brown: #B59F62;
-$teal: #40FFDC;
+$teal: #32e7ff;
 $black: #111;
 $primary: $teal;
 $dark:    $black;
@@ -198,6 +198,10 @@ img, img:hover {
             background: rgba(8, 11, 16, 0.7);
             animation: animate .3s;
     }
+}
+.nav-tip-text {
+    vertical-align: text-bottom;
+    font-size: smaller;
 }
 #menu {
     position: fixed;

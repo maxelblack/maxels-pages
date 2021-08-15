@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="icon" href="{{ site.baseurl }}/favicon.ico">
-
-<title>{{ page.title }} | {{site.name}}</title>
+<link rel="icon" href="{{ site.baseurl }}{{ site.favicon }}">
 
 {% if page.home %}
 <!-- Google Search Authentication -->
 <meta name="google-site-verification" content="{{ site.google_search_content }}" />
+<!-- Special title -->
+<title>{{ site.name }} - {{ site.description }}</title>
+{% else %}
+<title>{{ page.title }} | {{site.name}}</title>
 {% endif %}
 
 {% seo %}
@@ -55,24 +57,14 @@
 <nav id="menu">
     <ul>
         <h3>Navigation</h3>
-        <li><a href="{{ site.baseurl }}/">Home </a>
-            <a style="vertical-align:text-bottom;font-size:smaller;">主页</a>
+        {% for nav in site.navigation %}
+        <li>
+            <a href="{{ nav.url }}/">{{ nav.name }} </a>
+            {% if nav.tip != "" %}
+            <a class="nav-tip-text">{{ nav.tip }}</a>
+            {% endif %}
         </li>
-        <li><a href="{{ site.baseurl }}/about">About </a>
-            <a style="vertical-align:text-bottom;font-size:smaller;">关于网站</a>
-        </li>
-        <li><a href="{{ site.baseurl }}/authors">Authors </a>
-            <a style="vertical-align:text-bottom;font-size:smaller;">作者</a>
-        </li>
-        <li><a href="{{ site.baseurl }}/categories">Categories </a>
-            <a style="vertical-align:text-bottom;font-size:smaller;">文章分类</a>
-        </li>
-        <li><a href="{{ site.baseurl }}/contact">Contact </a>
-            <a style="vertical-align:text-bottom;font-size:smaller;">联系</a>
-        </li>
-        <li><a href="{{ site.baseurl }}/feed.xml" target="_blank">RSS Feed </a>
-            <a style="vertical-align:text-bottom;font-size:smaller;">订阅</a>
-        </li>
+        {% endfor %}
     </ul>   
 </nav>
 
@@ -88,20 +80,12 @@
 
     <!-- Site Name
     ================================================== -->
-   
+    {% if page.home == false %}
     <p style="text-align:center;">
         <a class="navbar-brand" href="{{ site.baseurl }}/">
             {{ site.name }}
         </a>
     </p>
-
-
-    <!-- Site Tag
-    ================================================== -->
-    {% if page.url == '/' %}
-        <p class="sitetag">
-            {{ site.description }}
-        </p>
     {% endif %}
 
     <!-- Content
