@@ -59,7 +59,7 @@
         <h3>Navigation</h3>
         {% for nav in site.navigation %}
         <li>
-            <a href="{{ nav.url }}/">{{ nav.name }} </a>
+            <a href="{{ nav.url }}">{{ nav.name }} </a>
             {% if nav.tip != "" %}
             <a class="nav-tip-text">{{ nav.tip }}</a>
             {% endif %}
