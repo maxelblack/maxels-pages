@@ -25,18 +25,17 @@
 
 </head>
 
-{% if site.google_analytics != "" %}
 {% if jekyll.environment == 'production' %}
 <!-- change your GA id in _config.yml -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{site.google_analytics}}');
+  gtag('config', '{{ site.google_analytics }}');
 </script>
-{% endif %}{% endif %}
+{% endif %}
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body>
@@ -61,9 +60,7 @@
         {% for nav in site.navigation %}
         <li>
             <a href="{{ nav.url }}">{{ nav.name }} </a>
-            {% if nav.tip != "" %}
             <a style="vertical-align:text-bottom;font-size:smaller;">{{ nav.tip }}</a>
-            {% endif %}
         </li>
         {% endfor %}
     </ul>   
