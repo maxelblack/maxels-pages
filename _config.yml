@@ -14,7 +14,7 @@ baseurl:
 permalink: /:year/:month/:title
 email: maxelblack@outlook.com
 disqus: 'maxels-pages'
-google_analytics: "G-0PRRN86LQ0"
+google_analytics:
 google_search_content: "vW3qvqkUTdYACYAKPz1FvhCCQP4lUGCWh8OMdafZKcs"
 lisence: '<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
 mailchimp-list:
