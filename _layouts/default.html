@@ -78,8 +78,8 @@
 
     <!-- Site Name
     ================================================== -->
-    {% if page.home == false %}
-    <p style="text-align:center;">
+    {% if page.home != true %}
+    <p style="text-align:center;font-family:'Josefin Sans',sans-serif;">
         <a class="navbar-brand" href="{{ site.baseurl }}/">
             {{ site.name }}
         </a>
