@@ -13,7 +13,9 @@ imageshadow: true
 
 这里用来记录我日常生活中的随笔、学习笔记和一些技术类文章（主要内容从程序设计到 Linux 配置操作不等），还有算法笔记之类，算是大杂烩了。
 
-[Follow me on GitHub &rarr;](https://github.com/maxelblack){: btn btn-dark }{:target="_blank"}
+<a href="https://github.com/maxelblack" class="btn btn-dark">
+    Follow me on GitHub &rarr;
+</a>
 
 [由 Typecho 驱动的另一个版本(不常更新)](https://maxelblack.dp7.link){:target="_blank"}
 
@@ -28,6 +30,8 @@ Twitter: [@maxelbk](https://twitter.com/maxelbk)
 Email: [maxelblack@outlook.com](mailto:maxelblack@outlook.com)
 
 Telegram: [@maxelbk](https://t.me/maxelbk)
+
+GitHub: 上方黑色按钮
 
 WeChat: maxelbk (WeChat ID)
 
