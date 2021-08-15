@@ -634,6 +634,20 @@ body.active-side {
         line-height: 1.2;
     }
 }
+div.double-line-text {
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+}  
+div.double-line-text span.line {
+    width: -webkit-fill-available;
+    color: #bbb;
+    border-top: 1px double;
+    margin-top: 15px;
+}
+div.double-line-text span#text {
+    margin: auto 12px;
+}
 
 //responsive tweaks
 @media (min-width: 768px) {

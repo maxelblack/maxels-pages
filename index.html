@@ -1,13 +1,12 @@
 ---
 layout: default
-title: 主页
 home: true
 description: "Code & write what we want."
 ---
 
 <!-- Site Title & Description
 ================================================== -->
-<div style="padding-left:2px;">
+<div style="padding-left:2px;padding-top:20px;padding-bottom:60px;">
     <p class="sitetag site-title">
         {{ site.title }}
     </p>
@@ -18,6 +17,11 @@ description: "Code & write what we want."
 
 <!-- Posts Index
 ================================================== -->
+<div class="double-line">
+    <span class="line"></span>
+    <span id="text">ARTICLES</span>
+    <span class="line"></span>
+</div>
 <div class="blog-grid-container">
     {% for post in paginator.posts %}
         {% include postbox.html %}
