@@ -13,7 +13,7 @@ imageshadow: true
 
 这里用来记录我日常生活中的随笔、学习笔记和一些技术类文章（主要内容从程序设计到 Linux 配置操作不等），还有算法笔记之类，算是大杂烩了。
 
-<a href="https://github.com/maxelblack" class="btn btn-dark">
+<a href="https://github.com/maxelblack" class="btn btn-dark" target="_blank">
     Follow me on GitHub &rarr;
 </a>
 
