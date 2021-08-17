@@ -31,8 +31,8 @@ a {
     color: darken($primary, 24%);
 }
 img {
-    max-width:100%;
-    height:auto;
+    max-width: 100%;
+    height: auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -51,15 +51,16 @@ table {
 }
 
 .site-content {
-    padding-top:50px;
+    padding-top: 50px;
+    padding-left: 80px;
 }
 .sitetag {   
-    line-height:1.3;
-    font-size:20px;
+    line-height: 1.3;
+    font-size: 20px;
     font-weight: lighter;
     @include media-breakpoint-up(sm) {
-        font-size:35px;
-        line-height:1.2;
+        font-size: 35px;
+        line-height: 1.2;
     }
 }
 .bigradius {
@@ -664,7 +665,6 @@ div.double-line-text span.text {
     .container {
         width: 90%;
         max-width:90%;
-        padding-left:80px;
     }
     .blog-grid-container {
         grid-template-columns: 1fr 1fr;
@@ -672,6 +672,9 @@ div.double-line-text span.text {
     .newsletter img.newsletter-logo {
         max-height: 50px;
         float: left;
+    }
+    .site-content {
+        padding-left: 0;
     }
 }
 @media (max-width: 768px) {
@@ -709,13 +712,13 @@ div.double-line-text span.text {
 
 @media (max-width: 600px) {
     .nav-icon, .sidebar, .share, .wrap-search {
-        position:relative;
+        position: relative;
     }
     .container {
-        padding-left:15px;
+        padding-left: 15px;
     }
     .site-content {
-        padding-top:0;
+        padding-top: 0;
     }
     .bd-search {
         visibility: visible;
