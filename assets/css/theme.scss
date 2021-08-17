@@ -52,7 +52,7 @@ table {
 
 .site-content {
     padding-top: 50px;
-    padding-left: 80px;
+    padding-left: 40px;
 }
 .sitetag {   
     line-height: 1.3;
@@ -674,9 +674,6 @@ div.double-line-text span.text {
         max-height: 50px;
         float: left;
     }
-    .site-content {
-        padding-left: 0;
-    }
 }
 @media (max-width: 768px) {
     .posttitle {
@@ -720,6 +717,7 @@ div.double-line-text span.text {
     }
     .site-content {
         padding-top: 0;
+        padding-left: 0;
     }
     .bd-search {
         visibility: visible;
