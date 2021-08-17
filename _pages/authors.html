@@ -18,23 +18,29 @@ comments: false
                 <p class="mt-4 mb-0 small text-center">
 
                     {% if author[1].web %}
-                        <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].web }}"><i class="fa fa-link"></i></a> 
+                    <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].web }}"><i class="fa fa-link"></i></a> 
                     {% endif %}
 
                     {% if author[1].twitter %}
-                        <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].twitter }}"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" class="d-inline-block mx-1 text-dark" href="{{ author[1].twitter }}"><i class="fab fa-twitter"></i></a>
                     {% endif %}
 
                     {% if author[1].email %}
-                        <a class="d-inline-block mx-1 text-dark" href="mailto:{{ author[1].email }}"><i class="fa fa-envelope"></i></a>
+                    <a class="d-inline-block mx-1 text-dark" href="mailto:{{ author[1].email }}"><i class="fa fa-envelope"></i></a>
                     {% endif %}
 
                 </p>
-                
             </div>
+
             <div class="col-md-9">
+
                 <h3>{{ author[1].display_name }}</h3>
-                <p class="mt-3 mb-0">{{ author[1].description }}</p> 
+                <p class="mt-3 mb-0">{{ author[1].description }}</p>
+
+                {% if author[1].introduction %}
+                <p class="mt-1 mb-0" style="font-size:small;">{{ author[1].introduction }}</p>
+                {% endif %}
+
             </div>
         </div> 
     </div>    
