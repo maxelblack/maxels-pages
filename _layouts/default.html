@@ -8,7 +8,7 @@
 
 {% if page.home %}
 <!-- Google Search Authentication -->
-<meta name="google-site-verification" content="{{ site.google_search_content }}" />
+<meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 <!-- Special title -->
 <title>{{ site.name }} - {{ site.description }}</title>
 {% else %}
@@ -25,17 +25,18 @@
 
 </head>
 
+{% if site.google_analytics == "enabled" %}
 {% if jekyll.environment == 'production' %}
-<!-- change your GA id in _config.yml -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', '{{ site.google_analytics }}');
+  gtag('config', '{{ site.google_analytics_id }}');
 </script>
-{% endif %}
+{% endif %} {% endif %}
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body>

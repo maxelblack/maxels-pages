@@ -14,8 +14,7 @@ baseurl:
 permalink: /:year/:month/:title
 email: maxelblack@outlook.com
 disqus: 'maxels-pages'
-google_analytics:
-google_search_content: "vW3qvqkUTdYACYAKPz1FvhCCQP4lUGCWh8OMdafZKcs"
+google_site_verification: "vW3qvqkUTdYACYAKPz1FvhCCQP4lUGCWh8OMdafZKcs"
 lisence: '<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
 mailchimp-list:
 
@@ -72,11 +71,15 @@ authors:
     name: "Maxel Black"
     display_name: "Maxel Black"
     avatar: 'r/maxel.jpg'
-    email: maxelblack@outlook.com
-    twitter: https://twitter.com/maxelbk
+    email: "maxelblack@outlook.com"
+    twitter: "https://twitter.com/maxelbk"
     description: "A simple student who loves coding."
 
 # Other Things
+
+# Google Analytics (change to "enabled" to activate, also your verification id.)
+google_analytics: "disabled"
+google_analytics_id:
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot.)
 # Create a new ad unit from your Adsense account to get the slot.
