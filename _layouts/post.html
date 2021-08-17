@@ -18,8 +18,8 @@ post_class: post-template
             {% else %}
             <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
             {% endif %}
-        </div>            
-        <div>
+        </div>
+        <div style="padding-left:7px;">
         Written by {{ author.display_name }} on 
         <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
         {% if page.last_modified_at %}
