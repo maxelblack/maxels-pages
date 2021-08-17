@@ -19,10 +19,10 @@ description: "Code & write what we want."
 ================================================== -->
 <div class="double-line-text">
     <span class="line"></span>
-    <span id="text">ARTICLES</span>
+    <span class="text">ARTICLES</span>
     <span class="line"></span>
 </div>
-<div class="blog-grid-container">
+<div class="blog-grid-container" id="Articles">
     {% for post in paginator.posts %}
         {% include postbox.html %}
     {% endfor %}
