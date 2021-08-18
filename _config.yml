@@ -9,7 +9,7 @@ description: "Code & write what we want."
 introduction: "Here is a simple blog written by a simple person."
 logo: '/assets/images/logo.png'
 favicon: '/favicon.ico'
-url: https://maxelblack.github.io
+url: 'https://maxelbk.vercel.app'
 baseurl:
 permalink: /:year/:month/:title
 email: maxelblack@outlook.com
