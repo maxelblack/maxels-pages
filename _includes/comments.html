@@ -6,7 +6,11 @@
     <div id="comments">  
         <h4>Comments</h4>
         <p style="font-size:smaller;" class="mb-4">Tip: There may be no ads if you've logged in.</p>
+        {% if site.disqus %}
         {% include disqus.html %}
+        {% else %}{% if site.twikoo %}
+        {% include twikoo.html %}
+        {% endif %}{% endif %}
     <div class="clearfix"></div>
     </div>
 </div>

@@ -1,0 +1,13 @@
+<section>
+    <div id="tcomment"></div>
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.4/dist/twikoo.all.min.js"></script>
+    <script>
+        twikoo.init({
+            envId: '{{ site.twikoo.envId }}',
+            el: '#tcomment',
+            region: '{{ site.twikoo.region }}',
+            path: 'window.location.pathname',
+            lang: '{{ site.twikoo.lang }}',
+        })
+    </script>
+</section>
