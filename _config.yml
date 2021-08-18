@@ -11,7 +11,7 @@ logo: '/assets/images/logo.png'
 favicon: '/favicon.ico'
 url: 'https://maxelbk.vercel.app'
 baseurl:
-permalink: /:year/:month/:title
+permalink: /article/:title.html
 email: maxelblack@outlook.com
 google_site_verification: "vW3qvqkUTdYACYAKPz1FvhCCQP4lUGCWh8OMdafZKcs"
 lisence: '<a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
@@ -40,23 +40,23 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    category: '/category/:name/'
+    category: '/category/:name.html'
 
 paginate: 6
-paginate_path: /p:num/
+paginate_path: /p:num.html
 
 navigation:
   - name: "Home"
     url: /
     tip: "主页"
   - name: "About"
-    url: /about
+    url: /about.html
     tip: "关于网站"
   - name: "Authors"
-    url: /authors
+    url: /authors.html
     tip: "作者"
   - name: "Categories"
-    url: /categories
+    url: /categories.html
     tip: "文章分类"
   - name: "RSS Feed"
     url: /feed.xml

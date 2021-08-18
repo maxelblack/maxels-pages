@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 关于网站
-permalink: /about
+permalink: /page/about.html
 comments: false
 image: r/bg-new.jpeg
 imageshadow: true

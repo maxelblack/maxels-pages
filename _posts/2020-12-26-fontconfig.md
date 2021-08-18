@@ -1,7 +1,6 @@
 ---
 layout: post
 author: maxelbk
-permalink: linux/fontconfig
 title: "FontConfig优先级问题解决方案"
 categories: [ "技术", "Linux" ]
 toc: true
