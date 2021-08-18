@@ -50,13 +50,13 @@ navigation:
     url: /
     tip: "主页"
   - name: "About"
-    url: /about.html
+    url: /page/about.html
     tip: "关于网站"
   - name: "Authors"
-    url: /authors.html
+    url: /page/authors.html
     tip: "作者"
   - name: "Categories"
-    url: /categories.html
+    url: /page/categories.html
     tip: "文章分类"
   - name: "RSS Feed"
     url: /feed.xml
