@@ -11,7 +11,7 @@ categories: [ "日常" ]
 
 在网页上添加的过程不是很难，三下五除二注释掉 Disqus ，在 _includes 中添加 `twikoo.html` 然后在评论位置引入这个文件，顺带还做了个简单的评论系统切换。（感觉这个修改版主题可配置项越来越多了）
 
-最简单的方式就是将这段代码添加到文章页面中评论的部分（Jekyll 一般在 `_layout/page.html` 中）：
+最简单的方式就是将这段代码添加到文章页面中评论的部分<!--MORE-->（Jekyll 一般在 `_layout/page.html` 中）：
 
 ```html
 <section>
