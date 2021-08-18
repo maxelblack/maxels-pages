@@ -29,9 +29,9 @@ categories: [ "日常" ]
 </section>
 ```
 
-其中支持的语言可以在这里查看: [支持的语言列表](https://github.com/imaegoo/twikoo/blob/dev/src/js/utils/i18n/index.js)
+其中支持的语言可以在这里查看: [支持的语言列表](https://github.com/imaegoo/twikoo/blob/dev/src/js/utils/i18n/index.js){:target="blank"}
 
-然后就是 Twikoo 服务器系统的搭建，这里我选择了 Vercel 的方案（~~是的继续白嫖~~），配合 MongoDB 的免费方案完全可以代替常规的服务器。具体如何操作在 [Twikoo 官方文档](https://twikoo.js.org/quick-start.html#vercel-%E9%83%A8%E7%BD%B2) 写的很清楚，这里不再赘述。
+然后就是 Twikoo 服务器系统的搭建，这里我选择了 Vercel 的方案（~~是的继续白嫖~~），配合 MongoDB 的免费方案完全可以代替常规的服务器。具体如何操作在 [Twikoo 官方文档](https://twikoo.js.org/quick-start.html#vercel-%E9%83%A8%E7%BD%B2){:target="blank"} 写的很清楚，这里不再赘述。
 
 一切就绪，提交推送构建一条龙。
 
@@ -39,4 +39,4 @@ categories: [ "日常" ]
 
 Twikoo 还支持从 Disqus 导入评论数据，不过我这边 Disqus 导出时直接给了我一个排队中...所以没办法...建议谨慎使用 Disqus 的免费版本...
 
-另外这个博客由 GitHub Pages 切换到了 Vercel 的网页托管服务，由此域名也变成了 [https://maxelbk.vercel.app](https://maxelbk.vercel.app)。~~DP7.LINK域名准备中~~
+另外这个博客由 GitHub Pages 切换到了 Vercel 的网页托管服务，由此域名也变成了 [https://maxelbk.vercel.app](https://maxelbk.vercel.app){:target="blank"}。~~DP7.LINK域名准备中~~
