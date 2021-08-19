@@ -641,13 +641,19 @@ div.double-line-text {
     display: flex;
 }  
 div.double-line-text span.line {
-    width: -webkit-fill-available;
+    width: 100%;
     color: #bbb;
     border-top: 1px double;
     margin-top: 15px;
 }
 div.double-line-text span.text {
     margin: auto 12px;
+}
+p.not-support-message {
+    font-size: 1.6em;
+    text-align: center;
+    color: gray;
+    margin: unset 30px;
 }
 
 //responsive tweaks
