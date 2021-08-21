@@ -73,7 +73,7 @@
 <!-- End Sidebar Navigation
 ================================================== -->
 
-<div class="site-content {% if page.url == '/' %} firstpage {% endif %}">
+<div class="site-content {% if page.home == true %} firstpage {% endif %}">
 
 <div class="container">
 
@@ -139,9 +139,9 @@
 <script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
 {% endif %}
 
-{% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
-{% endif %}
+{% if page.layout == 'post' %}{% if site.disqus %}
+<script id="dsq-count-scr" src="//{{site.disqus.id}}.disqus.com/count.js"></script>
+{% endif %}{% endif %}
 
 </body>
 </html>
