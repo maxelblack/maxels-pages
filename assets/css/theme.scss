@@ -610,7 +610,7 @@ body.active-side {
 .footer {
     margin-top:120px;
     padding: 30px;
-    // border-top: 1px solid $gray-200;
+    border-top: 1px solid var(--color-splitline);
     font-size: 15px;
     background: var(--color-background-footer);
 }
