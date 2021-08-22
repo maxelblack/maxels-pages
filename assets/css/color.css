@@ -1,6 +1,6 @@
 :root {
     --color-primary: #3df9ff;
-    --color-primary-darken: #10efff;
+    --color-primary-darken: #06ebfc;
     --color-primary-underline: linear-gradient(180deg, transparent 89%, #3df9ff 0);
     --color-text: #212529;
     --color-text-secondary: #555;
@@ -20,7 +20,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-primary: #3df9ff;
-        --color-primary-darken: #10efff;
+        --color-primary-darken: #06ebfc;
         --color-primary-underline: linear-gradient(180deg, transparent 89%, #3df9ff 0);
         --color-text: #d0cDc7;
         --color-text-secondary: #bbb;

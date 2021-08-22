@@ -26,6 +26,9 @@ body {
 }
 a {
     color: var(--color-primary-darken);
+    :hover {
+        color: var(--color-primary);
+    }
 }
 img {
     max-width: 100%;
