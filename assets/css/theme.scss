@@ -2,8 +2,6 @@
 
 ---
 
-@import "color";
-
 $brown: #B59F62;
 $enable-rounded: false;
 
@@ -13,6 +11,7 @@ $enable-rounded: false;
 @import "bootstrap/mixins";
 @import 'bootstrap/bootstrap';
 @import 'stars';
+@import 'color';
 
 // import fonts
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Sen&display=swap');
