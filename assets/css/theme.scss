@@ -658,14 +658,19 @@ p.not-support-message {
 .container.container-footer {
     padding-top: 0;
 }
-.text-dark {
-    color: var(--color-strong);
-    :hover {
-        color: var(--color-text);
-    }
+
+// override default colors
+a.text-dark {
+    color: var(--color-strong) !important;
+}
+a.text-dark:hover {
+    color: var(--color-text) !important;
+}
+a.text-dark:focus {
+    color: var(--color-strong) !important;
 }
 .bg-white {
-    background-color: #0000;
+    background-color: #0000 !important;
 }
 .badge-primary {
     background-color: var(--color-primary-darken);
@@ -679,6 +684,24 @@ p.not-support-message {
 .btn-outline-dark {
     color: var(--color-text);
     border-color: var(--color-splitline);
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--color-primary-darken);
+    border-color: var(--color-primary-darken);
+}
+.btn-primary:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+.modal-content {
+    background-color: var(--color-background-card);
+}
+.close {
+    color: var(--color-rawicon);
+}
+.close:hover {
+    color: var(--color-strong);
 }
 
 //responsive tweaks
