@@ -613,7 +613,7 @@ body.active-side {
 .footer {
     margin-top:120px;
     padding: 30px;
-    border-top: 1px solid var(--color-splitline);
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
     font-size: 15px;
     background: var(--color-background-footer);
 }
@@ -654,6 +654,28 @@ p.not-support-message {
 // override default values
 .container {
     padding-top: 50px;
+}
+.container.container-footer {
+    padding-top: 0;
+}
+.text-dark {
+    color: var(--color-strong);
+    :hover {
+        color: var(--color-text);
+    }
+}
+.bg-white {
+    background-color: unset;
+}
+.badge-primary {
+    color: var(--color-primary-darken);
+}
+.card {
+    background-color: var(--color-background-card);
+}
+.btn-outline-dark {
+    color: var(--color-text);
+    border-color: var(--color-splitline);
 }
 
 //responsive tweaks

@@ -16,6 +16,7 @@
     --color-background-footer: #fff;
     --color-background-code: #fff;
     --color-background-spoiler: #fff;
+    --color-background-card: #fff;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -36,5 +37,6 @@
         --color-background-footer: #171a1d;
         --color-background-code: #171a1d;
         --color-background-spoiler: #171a1d;
+        --color-background-card: #171a1d;
     }
 }
