@@ -26,7 +26,7 @@ body {
     color: var(--color-text);
 }
 a {
-    color: darken(var(--color-primary), 24%);
+    color: var(--color-primary-darken);
 }
 img {
     max-width: 100%;
@@ -273,7 +273,7 @@ img, img:hover {
         font-size:22px;
         line-height:1.4;
         a { 
-            background-image: linear-gradient(180deg, transparent 89%, $primary 0);
+            background-image: var(--color-primary-underline);
             background-repeat: no-repeat;
             background-size: 0 100%;
             transition: background-size .6s ease;
@@ -355,7 +355,7 @@ img, img:hover {
         color: var(--color-strong);
         cursor:pointer;
         &:hover {
-            background: $primary;
+            background: var(--color-primary);
             text-decoration:none;
         }
     }
@@ -396,7 +396,7 @@ img, img:hover {
             color: var(--color-strong);
             padding: 4px 20px;
             margin-left:-5px;
-            background:$primary;
+            background: var(--color-primary);
             border-left: 1px solid;
             font-weight:700;
         }
@@ -438,7 +438,7 @@ img, img:hover {
         width:50px;
         border-radius:50%;
         margin-right:10px;
-        border:2px solid darken(var(--color-primary), 20%);
+        border:2px solid var(--color-primary-darken);
         padding:2px;
     }
 }
@@ -451,7 +451,7 @@ img, img:hover {
     .author-thumb {
         width:70px;
         border-radius:50%;
-        border:2px solid darken(var(--color-primary), 20%);
+        border:2px solid var(--color-primary-darken);
         padding:2px;
     }
 }
@@ -555,7 +555,7 @@ img, img:hover {
 .show-search {
     cursor:pointer;
     &:hover {
-        color: darken(var(--color-primary), 20%);
+        color: var(--color-primary-darken);
     }
 }
 .bd-search {
@@ -586,7 +586,7 @@ img, img:hover {
         font-size: 20px;
         margin-bottom: 5px;
         &:hover {
-            color: darken(var(--color-primary), 20%);
+            color: var(--color-primary-darken);
         }
     }
     span.body {
@@ -615,7 +615,7 @@ body.active-side {
 .footer {
     margin-top:120px;
     padding: 30px;
-    border-top: 1px solid $gray-200;
+    // border-top: 1px solid $gray-200;
     font-size: 15px;
     background: var(--color-background-footer);
 }
@@ -636,15 +636,15 @@ div.double-line-text {
     text-align: center;
     line-height: 30px;
     display: flex;
-}  
-div.double-line-text span.line {
-    width: 100%;
-    color: var(--color-splitline);
-    border-top: 1px double;
-    margin-top: 15px;
-}
-div.double-line-text span.text {
-    margin: auto 12px;
+    span.line {
+        width: 100%;
+        color: var(--color-splitline);
+        border-top: 1px double;
+        margin-top: 15px;
+    }
+    span.text {
+        margin: auto 12px;
+    }
 }
 p.not-support-message {
     font-size: 1.7em;
