@@ -26,9 +26,9 @@ body {
 }
 a {
     color: var(--color-primary-darken);
-    :hover {
-        color: var(--color-primary);
-    }
+}
+a:hover {
+    color: var(--color-primary);
 }
 img {
     max-width: 100%;
@@ -665,10 +665,13 @@ p.not-support-message {
     }
 }
 .bg-white {
-    background-color: unset;
+    background-color: #0000;
 }
 .badge-primary {
-    color: var(--color-primary-darken);
+    background-color: var(--color-primary-darken);
+}
+.badge-primary:hover {
+    background-color: var(--color-primary);
 }
 .card {
     background-color: var(--color-background-card);
