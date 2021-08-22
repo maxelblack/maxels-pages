@@ -672,10 +672,10 @@ a.text-dark:focus {
 .bg-white {
     background-color: #0000 !important;
 }
-.badge-primary {
+a.badge-primary {
     background-color: var(--color-primary-darken);
 }
-.badge-primary:hover {
+a.badge-primary:hover, a.badge-primary:focus {
     background-color: var(--color-primary);
 }
 .card {
@@ -693,6 +693,11 @@ a.text-dark:focus {
 .btn-primary:hover {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
+}
+.form-control {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-splitline);
 }
 .modal-content {
     background-color: var(--color-background-card);
