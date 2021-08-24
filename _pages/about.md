@@ -25,11 +25,11 @@ imageshadow: true
 
 目前可以从下面的地方找到我：
 
-Twitter: [@maxelbk](https://twitter.com/maxelbk)
+Twitter: [@maxelbk](https://twitter.com/maxelbk){:target="_blank"}
 
 Email: [maxelblack@outlook.com](mailto:maxelblack@outlook.com)
 
-Telegram: [@maxelbk](https://t.me/maxelbk)
+Telegram: [@maxelbk](https://t.me/maxelbk){:target="_blank"}
 
 GitHub: 上方黑色按钮
 
@@ -37,7 +37,7 @@ WeChat: maxelbk (WeChat ID)
 
 ### 关于网页
 
-这个网页托管在 Vercel 上，由 [Jekyll](https://jekyllrb.com/) 驱动，使用的主题是 Memoirs 的修改版（是我自己边用边改的），原主题链接在页面右下角。
+这个网页托管在 Vercel 上，由 [Jekyll](https://jekyllrb.com/){:target="_blank"} 驱动，使用的主题是 Memoirs 的修改版（是我自己边用边改的），原主题链接在页面右下角。
 
 页面左下角（移动端布局在页首）的搜索功能是原主题自带的，~~在设计之初完全没有考虑中文搜索，所以用处几乎为0~~...找东西的话还是直接从分类里面翻吧...
 
