@@ -37,7 +37,7 @@ markdown: kramdown
 
 # Internet Explorer check
 ie_check:
-  message: '本站对IE浏览器仅保证最小兼容，请尽可能使用 <a href="https://www.google.com/chrome">Chrome</a> 等现代浏览器访问'
+  message: '本站对IE浏览器仅保证最小兼容，请尽可能使用 <a href=\"https://www.google.com/chrome\">Chrome</a> 等现代浏览器访问'
   comment: '评论系统暂不支持IE浏览器'
 
 jekyll-archives:

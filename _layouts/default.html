@@ -31,9 +31,9 @@
 <header class="site-content" id="no-ie-content"></header>
 <script>
     window.isIE;
-    var agent = navigator.userAgent
-    var isIEAgent = agent.indexOf("compatible") > -1 && agent.indexOf("MSIE") > -1 && !isOpera
-    window.isIE = !!window.ActiveXObject || "ActiveXObject" in window || isIEAgent
+    var agent = navigator.userAgent;
+    var isIEAgent = agent.indexOf("compatible") > -1 && agent.indexOf("MSIE") > -1 && !isOpera;
+    window.isIE = !!window.ActiveXObject || "ActiveXObject" in window || isIEAgent;
     if (window.isIE) document.getElementById("no-ie-content").innerHTML = "<p class=\"no-ie-content\">{{ site.ie_check.message }}</p>";
 </script>
 {% endif %}
