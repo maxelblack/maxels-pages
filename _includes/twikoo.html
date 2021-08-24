@@ -2,19 +2,18 @@
     <div id="tcomment"></div>
     <script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.4/dist/twikoo.all.min.js"></script>
     <script>
-        // If the browser is IE, print Not Support message
-        var agent = navigator.userAgent
-        var isIEAgent = agent.indexOf("compatible") > -1 && agent.indexOf("MSIE") > -1 && !isOpera
-        if (!!window.ActiveXObject || "ActiveXObject" in window || isIEAgent)
-            document.getElementById("tcomment").innerHTML = "<p class=\"not-support-message\">评论系统暂不支持IE浏览器</p>";
         // Initialize Twikoo
-        else
-            twikoo.init({
-                envId: '{{ site.twikoo.envId }}',
-                el: '#tcomment',
-                region: '{{ site.twikoo.region }}',
-                path: 'window.location.pathname',
-                lang: '{{ site.twikoo.lang }}',
-            })
+        twikoo.init({
+            envId: '{{ site.twikoo.envId }}',
+            el: '#tcomment',
+            region: '{{ site.twikoo.region }}',
+            path: 'window.location.pathname',
+            lang: '{{ site.twikoo.lang }}',
+        });
     </script>
+    {% if site.ie_check %}
+    <script>
+        if (window.isIE) document.getElementById("tcomment").innerHTML = "<p class=\"not-support-message\">{{ site.ie_check.comment }}</p>";
+    </script>
+    {% endif %}
 </section>
