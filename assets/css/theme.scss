@@ -650,11 +650,13 @@ p.not-support-message {
     color: var(--color-text-secondary);
     margin: 30px unset;
 }
-.site-content p.no-ie-content {
+p.no-ie-content {
     color: black;
     background-color: lightgray;
     font-family: sans-serif;
-    padding: 7px 20px;
+    text-align: center;
+    padding: 7px;
+    margin-left: 80px;
     a {
         color: #07f;
     }

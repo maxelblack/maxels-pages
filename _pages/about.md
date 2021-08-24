@@ -19,7 +19,7 @@ imageshadow: true
 
 [由 Typecho 驱动的另一个版本(不常更新)](https://maxelblack.dp7.link){:target="_blank"}
 
-[托管在 GitHub 仓库的网页源代码](https://github.com/maxelblack/maxelblack.github.io){:target="_blank"}
+[托管在 GitHub 仓库的网页源代码](https://github.com/maxelblack/maxels-pages){:target="_blank"}
 
 ### 联系方式
 
@@ -37,11 +37,14 @@ WeChat: maxelbk (WeChat ID)
 
 ### 关于网页
 
-这个网页托管在 GitHub Pages 上，由 [Jekyll](https://jekyllrb.com/) 驱动，使用的主题是 Memoirs 的修改版（是我自己边用边改的），原主题链接在页面右下角。
+这个网页托管在 Vercel 上，由 [Jekyll](https://jekyllrb.com/) 驱动，使用的主题是 Memoirs 的修改版（是我自己边用边改的），原主题链接在页面右下角。
 
 页面左下角（移动端布局在页首）的搜索功能是原主题自带的，~~在设计之初完全没有考虑中文搜索，所以用处几乎为0~~...找东西的话还是直接从分类里面翻吧...
 
+另外，关于 Internet Explorer 的兼容问题，我只能说我尽力了，但 IE 连个 CSS 变量都不支持我也没有办法。亮色/暗色模式自动切换的配色方案部分使用了 CSS 变量，故 IE 无法正确显示网页上各个元素的配色（最明显的现象就是左上角的侧栏按钮变成了纯透明）；目前正在用的评论系统（Twikoo）由于某些技术原因也不支持 IE 浏览器。
+
 ### 版权声明
 
-- 博客所有文章若无特别说明均遵循 [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){:target="_blank"} 协议。
-- 若需用于商业用途，请直接联系我获取商业许可。
+博客所有文章若无特别说明均遵循 [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){:target="_blank"} 协议，请勿用于商业用途。
+
+网页的 HTML 代码本身均由 Jekyll 自动生成，上述协议生效范围实际上仅仅是博客的所有文章标题和内容，其余网页代码遵循 GitHub 仓库源代码的开源协议（详见仓库 README 文件）
