@@ -26,18 +26,6 @@
 
 </head>
 
-<!-- IE Check -->
-{% if site.ie_check %}
-<header class="site-content" id="no-ie-content"></header>
-<script>
-    window.isIE;
-    var agent = navigator.userAgent;
-    var isIEAgent = agent.indexOf("compatible") > -1 && agent.indexOf("MSIE") > -1 && !isOpera;
-    window.isIE = !!window.ActiveXObject || "ActiveXObject" in window || isIEAgent;
-    if (window.isIE) document.getElementById("no-ie-content").innerHTML = "<p class=\"no-ie-content\">{{ site.ie_check.message }}</p>";
-</script>
-{% endif %}
-
 {% if site.google_analytics == "enabled" %}
 {% if jekyll.environment == 'production' %}
 <!-- Google Analytics -->
@@ -57,6 +45,18 @@
 		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</noscript>
+
+<!-- IE Check -->
+{% if site.ie_check %}
+<header class="site-content" id="no-ie-content"></header>
+<script>
+    window.isIE;
+    var agent = navigator.userAgent;
+    var isIEAgent = agent.indexOf("compatible") > -1 && agent.indexOf("MSIE") > -1 && !isOpera;
+    window.isIE = !!window.ActiveXObject || "ActiveXObject" in window || isIEAgent;
+    if (window.isIE) document.getElementById("no-ie-content").innerHTML = "<p class=\"no-ie-content\">{{ site.ie_check.message }}</p>";
+</script>
+{% endif %}
 
 <!-- Begin Sidebar Navigation
 ================================================== -->
