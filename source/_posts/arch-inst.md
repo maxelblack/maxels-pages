@@ -136,7 +136,7 @@ P.S.: 设备文件一般位于 `/dev` 目录中，若不在该目录中（即路
 
 其中，无论何种引导方式，都需要一个最小 6 GB 左右（建议 20 GB 以上）的分区用于安装 Arch Linux 系统。
 
-Linux 下的分区软件有很多（小白建议使用 **cfdisk** ），这里不详细讲述分区方法，具体请自行搜索或参考[这篇文章](/linux/fdisk)。
+Linux 下的分区软件有很多（小白建议使用 **cfdisk** ），这里不详细讲述分区方法，具体请自行搜索或参考[这篇文章](/article/fdisk.html)。
 
 P.S.: Arch Wiki 有很多 Linux 分区软件的使用方法，如 [fdisk](https://wiki.archlinux.org/title/Fdisk) 、 [parted](https://wiki.archlinux.org/title/Parted) 等，[这里](https://wiki.archlinux.org/title/Partitioning#Partitioning_tools)（[中文页面](https://wiki.archlinux.org/title/Partitioning_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29#%E5%88%86%E5%8C%BA%E5%B7%A5%E5%85%B7)）甚至有一个基本上所有能用的分区工具列表。
 
