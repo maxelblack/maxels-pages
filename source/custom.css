@@ -3,3 +3,21 @@
 body {
     font-family: Hind, "Noto Sans SC", "SourceHan Sans SC", "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
 }
+
+/* Double line */
+div.double-line-text {
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+    margin: 20px 0;
+}
+div.double-line-text span.line {
+    width: 100%;
+    color: var(--sec-text-color);
+    border-top: 1px double;
+    margin-top: 15px;
+}
+div.double-line-text span.text {
+    margin: auto 12px;
+    flex: none
+}

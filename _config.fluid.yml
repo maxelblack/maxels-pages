@@ -109,7 +109,7 @@ fun_features:
   progressbar:
     enable: true
     height_px: 3
-    color: "#29d"
+    color: "#f2cdc3"
     # See: https://github.com/rstacruz/nprogress
     options: { showSpinner: false, trickleSpeed: 100 }
 
@@ -135,7 +135,7 @@ color:
 
   # 顶部菜单背景色
   # Color of navigation bar background
-  navbar_bg_color: "#2f4154"
+  navbar_bg_color: "#e9d2cd"
   navbar_bg_color_dark: "#1f3144"
 
   # 顶部菜单字体色
@@ -165,17 +165,17 @@ color:
 
   # 文章超链接字体色
   # Color of post link
-  post_link_color: "#0366d6"
+  post_link_color: "#ccafa8"
   post_link_color_dark: "#1589e9"
 
   # 超链接悬浮时字体色
   # Color of link when hovering
-  link_hover_color: "#30a9de"
+  link_hover_color: "#f1cfc8"
   link_hover_color_dark: "#30a9de"
 
   # 超链接悬浮背景色
   # Color of link background when hovering
-  link_hover_bg_color: "#f8f9fa"
+  link_hover_bg_color: "#e7c6c0"
   link_hover_bg_color_dark: "#364151"
 
   # 主面板背景色
@@ -584,7 +584,7 @@ post:
   # Copyright, will be displayed at the end of each post
   copyright:
     enable: true
-    content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！'
+    content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-NC-SA 4.0 协议</a> ，转载请注明出处！'
 
   # 文章底部上一篇下一篇功能
   # Link to previous/next post
@@ -909,10 +909,39 @@ links:
   # Member item of page
   items:
     - {
+      title: "林槐的杂货铺",
+      intro: "要来点什么吗 QWQ",
+      link: "https://stapxs.cn",
+      avatar: "https://blog.stapxs.cn/usr/uploads/2020/03/3664075920.png"
+    }
+    - {
       title: "Lapis Apple's Recycle Bin",
       intro: "一个回收站，里面住着 Lapis Apple。",
       link: "https://laple.me/",
       avatar: "https://s1.ax1x.com/2020/04/12/GqhDs0.png"
+    }
+    - {
+      title: "Hao_Tian的博客",
+      intro: "Hao_Tian的个人博客(｡･∀･)ﾉﾞ嗨",
+      link: "https://haotian.pd2.ink/",
+      avatar: "https://haotian.pd2.ink/img/head.jpg"
+    }
+    - {
+      title: "Mare_Infinitus",
+      intro: "给岁月以文明，给时光以生命。",
+      link: "https://lab.imgb.space",
+      avatar: "https://onedrive-gbindex.vercel.app/api?path=%2Fimg%2Favatar.png&raw=true"
+    }
+    - {
+      title: "186526's Blog",
+      intro: "啥都不会的屑",
+      link: "https://blog.186526.xyz",
+      avatar: "https://i.186526.xyz/avatar"
+    }
+    - {
+      title: "郭桓桓的小 Blog",
+      link: "https://blog.nekohuan.cyou/",
+      avatar: "https://nekohuan.cyou/req/img/logo/profile@2x.webp"
     }
 
   # 当成员头像加载失败时，替换为指定图片
@@ -922,8 +951,18 @@ links:
   # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
   # Custom content at the bottom of the links
   custom:
-    enable: false
-    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>'
+    enable: true
+    content: '
+    <div class="double-line-text" id="links"><span class="line"></span>
+    <span class="text">我的信息</span><span class="line"></span></div>
+    <figure style="background:var(--body-bg-color);padding:10px"><table><tr><td><div><pre style="margin-bottom:0"><code style="color:var(--text-color)">- Title:        Maxel&apos;s Pages<br>- Address:      https://blog.maxelbk.ml<br>- Author:       Maxel Black<br>- Description:  Code &amp; write what we want.<br>- Avatar:       https://maxelbk.vercel.app/r/maxel.jpg<br></code></pre></div></td></tr></table></figure>
+    <div class="double-line-text" id="links"><span class="line"></span>
+    <span class="text">友情 & 推广</span><span class="line"></span></div>
+    <p style="background:var(--body-bg-color);padding:14px">在这个独立博客式微的时代，友情链接的意义是什么？<br>按照 Wikipedia 上的定义，这种「两个或者以上的网站互相放上对方的链接，达到向用户推荐以互相共享用户群的一种 SEO 方式」有着不少优点，包括但不限于提高网站权重、知名度、转化率。<br>和 Medium、简书之类的写作平台不同，每一个独立博客都是一个信息孤岛。我们没有类似「你可能喜欢其他人写的这些文章」的推荐机制，所以除了搜索引擎、社交网络引荐之外，我们应该还需要通过某种方法将这些信息孤岛连接起来：交换友情链接就是一种很棒的架桥方式。</p>
+    <p>以上内容来自<u><a target="_blank" rel="noopener" href="https://printempw.github.io/friends/">这里</a></u></p>
+    <p>友链确实是一种很不错的架桥方式，但也不仅仅是推广，更多的是想探索更大的世界，“心向远方，梦向天地”。</p>
+    <p>欢迎互换友链，随意一个评论区甩上你的信息即可。要求全站支持 HTTPS。</p>
+    '
 
   # 评论插件
   # Comment plugin
