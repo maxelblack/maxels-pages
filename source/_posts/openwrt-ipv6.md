@@ -2,7 +2,7 @@
 layout: post
 title: "关于 OpenWrt IPv6 配置的那些坑"
 categories: [ "技术", "OpenWrt" ]
-date: 2021-08-26
+date: 2021-08-26 15:03:12
 ---
 
 大概调整了一个多周，博主家的网络布局终于稳定了下来，特此总结一下 OpenWrt 的 IPv6 配置中那些坑。
