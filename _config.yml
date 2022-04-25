@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Maxel's Pages
-subtitle: 'Code & write we want'
+title: "Maxel's Pages"
+subtitle: "Code & write we want"
 description: "Maxel Black's personal blog website."
 keywords: [maxel, black, page, code, write, blog]
 author: 'Maxel Black'
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.maxelbk.ml
+url: https://blog.maxelbk.eu.org
 permalink: article/:title.html
 permalink_defaults:
 pretty_urls:
