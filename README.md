@@ -1,6 +1,6 @@
 # A personal blog maintained by Maxel Black
 
-https://blog.maxelbk.ml
+https://blog.maxelbk.eu.org
 
 - Language: *Simplified Chinese*
 - Locale: *China Mainland*
