@@ -939,7 +939,8 @@ links:
       avatar: "https://i.186526.xyz/avatar"
     }
     - {
-      title: "郭桓桓的小 Blog",
+      title: "Huan's Log",
+      intro: "Bravery never goes out of fashion.",
       link: "https://blog.nekohuan.cyou/",
       avatar: "https://nekohuan.cyou/req/img/logo/profile@2x.webp"
     }
@@ -955,7 +956,7 @@ links:
     content: '
     <div class="double-line-text" id="links"><span class="line"></span>
     <span class="text">我的信息</span><span class="line"></span></div>
-    <figure style="background:var(--body-bg-color);padding:10px"><table><tr><td><div><pre style="margin-bottom:0"><code style="color:var(--text-color)">- Title:        Maxel&apos;s Pages<br>- Address:      https://blog.maxelbk.ml<br>- Author:       Maxel Black<br>- Description:  Code &amp; write what we want.<br>- Avatar:       https://blog.maxelbk.ml/r/maxel.jpg<br></code></pre></div></td></tr></table></figure>
+    <figure style="background:var(--body-bg-color);padding:10px"><table><tr><td><div><pre style="margin-bottom:0"><code style="color:var(--text-color)">- Title:        Maxel&apos;s Pages<br>- Address:      https://blog.maxelbk.eu.org<br>- Author:       Maxel Black<br>- Description:  Code &amp; write what we want.<br>- Avatar:       https://blog.maxelbk.eu.org/r/maxel.jpg<br></code></pre></div></td></tr></table></figure>
     <div class="double-line-text" id="links"><span class="line"></span>
     <span class="text">友情 & 推广</span><span class="line"></span></div>
     <p style="background:var(--body-bg-color);padding:14px">在这个独立博客式微的时代，友情链接的意义是什么？<br>按照 Wikipedia 上的定义，这种「两个或者以上的网站互相放上对方的链接，达到向用户推荐以互相共享用户群的一种 SEO 方式」有着不少优点，包括但不限于提高网站权重、知名度、转化率。<br>和 Medium、简书之类的写作平台不同，每一个独立博客都是一个信息孤岛。我们没有类似「你可能喜欢其他人写的这些文章」的推荐机制，所以除了搜索引擎、社交网络引荐之外，我们应该还需要通过某种方法将这些信息孤岛连接起来：交换友情链接就是一种很棒的架桥方式。</p>
