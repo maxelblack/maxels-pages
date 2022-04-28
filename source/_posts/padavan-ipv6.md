@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "原版 Padavan IPv6 配置"
-categories: [ "技术", "Router", "教程" ]
+categories: [ "网络" ]
 date: 2021-12-09 17:52:15
 ---
 

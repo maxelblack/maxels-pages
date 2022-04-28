@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "关于 OpenWrt IPv6 配置的那些坑"
-categories: [ "技术", "OpenWrt" ]
+categories: [ "网络" ]
 date: 2021-08-26 15:03:12
 ---
 

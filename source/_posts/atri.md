@@ -2,7 +2,7 @@
 layout: post
 title: "ATRI : 生命真正的意义"
 index_img: r/pic/ITC_GAME_ATRI.jpg
-categories: [ "游戏", "日常" ]
+categories: [ "游戏" ]
 date: 2021-08-08
 ---
 

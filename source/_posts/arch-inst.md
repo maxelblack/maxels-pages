@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Arch Linux 安装指引"
-categories: [ "Linux", "技术", "教程" ]
+categories: [ "Linux", "教程" ]
 index_img: r/pic/SCS_ARCHISO_202104.png
 date: 2021-04-24
 ---

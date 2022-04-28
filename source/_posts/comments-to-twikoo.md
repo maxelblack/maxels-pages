@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "评论系统迁移到 Twikoo"
-categories: [ "日常" ]
+categories: [ "维护" ]
 date: 2021-08-18
 ---
 

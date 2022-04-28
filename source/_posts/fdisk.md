@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "FDISK 常用功能详解"
-categories: [ "Linux", "技术", "教程", "命令行" ]
+categories: [ "Linux" ]
 date: 2021-07-29
 ---
 

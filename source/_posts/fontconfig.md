@@ -2,7 +2,7 @@
 layout: post
 title: "FontConfig优先级问题解决方案"
 date: 2020-12-26
-categories: [ "技术", "Linux" ]
+categories: [ "Linux" ]
 ---
 
 大多数Linux用户可能经常遇到 FontConfig 的优先级问题, 简单来说就是某些应用的字体显示不正常, 让人看起来很奇怪.<!--MORE--> 例如用 Qt 写的 Telegram Desktop 客户端, 经常出现一些字符宽度偏窄(如"关","复"字), 甚至更有一些字符直接显示出不像是汉字的轮廓(如"直"字).
