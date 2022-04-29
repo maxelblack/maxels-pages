@@ -944,6 +944,12 @@ links:
       link: "https://blog.nekohuan.cyou/",
       avatar: "https://nekohuan.cyou/req/img/logo/profile@2x.webp"
     }
+    - {
+      title: "Zhuym的博客",
+      intro: "Zhuym的个人博客",
+      link: "https://blog.zer0code.cn/",
+      avatar: "https://s1.ax1x.com/2022/03/06/bBDeJI.png"
+    }
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
