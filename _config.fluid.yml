@@ -933,10 +933,10 @@ links:
       avatar: "https://onedrive-gbindex.vercel.app/api?path=%2Fimg%2Favatar.png&raw=true"
     }
     - {
-      title: "186526's Blog",
-      intro: "啥都不会的屑",
-      link: "https://blog.186526.xyz",
-      avatar: "https://i.186526.xyz/avatar"
+      title: "It's me, 186526!",
+      intro: "一个啥都不会的屑",
+      link: "https://186526.xyz/",
+      avatar: "https://186526.xyz/avatar.png"
     }
     - {
       title: "Huan's Log",
