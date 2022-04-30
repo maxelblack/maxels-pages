@@ -390,11 +390,11 @@ footer:
     <i class="iconfont icon-love"></i>
     <span>Theme</span>
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
-    <span> | CDN service by</span>
-    <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="_blank" rel="nofollow noopener">
-      <img src="/r/upyun.svg" style="height:22px;">
-    </a>
   '
+  # <span> | CDN service by</span>
+  # <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="_blank" rel="nofollow noopener">
+  #   <img src="/r/upyun.svg" style="height:22px;">
+  # </a>
 
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
