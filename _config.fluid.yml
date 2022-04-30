@@ -872,7 +872,7 @@ about:
     - { class: "iconfont icon-github-fill", link: "https://github.com/maxelblack", tip: "GitHub" }
     - { class: "iconfont icon-twitter-fill", link: "https://twitter.com/maxelbk", tip: "Twitter" }
     - { class: "iconfont icon-qq-fill", link: "http://wpa.qq.com/msgrd?v=3&uin=3302584879&site=qq&menu=yes", tip: "QQ" }
-    - { class: "iconfont icon-telegram-fill", link: "https://t.me/maelbk", tip: "Telegram" }
+    - { class: "iconfont icon-telegram-fill", link: "https://t.me/maxelbk", tip: "Telegram" }
     # - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
 
