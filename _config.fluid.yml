@@ -962,6 +962,12 @@ links:
       link: "https://blog.lijiakaijun.cyou",
       avatar: "https://blog.lijiakaijun.cyou/favicon.png"
     }
+    - {
+      title: "Jackie的喵屋&~",
+      intro: "一只猫猫的猫窝！",
+      link: "https://jackiecat.top/",
+      avatar: "https://s2.loli.net/2022/05/04/iQsm9Bofv83yY1U.jpg"
+    }
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
