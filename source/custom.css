@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Noto+Sans+SC:wght@500&display=swap');
+@font-face {
+    font-family: "OPPO Sans";
+    src: url(https://code.oppo.com/content/dam/oppo/common/fonts/font2/new-font/OPPOSansOS2-5000-Medium.woff2);
+}
 
 :root {
-    --custom-font-fallback: "Hind", "Noto Sans SC", "SourceHan Sans SC", "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    --custom-font-fallback: "Noto Sans SC", "SourceHan Sans SC", "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 body {
-    font-family: var(--custom-font-fallback);
+    font-family: "Hind", var(--custom-font-fallback);
 }
 .markdown-body {
-    font-family: Hind, var(--custom-font-fallback);
+    font-family: "OPPO Sans", var(--custom-font-fallback);
 }
 
 /* Double line */
