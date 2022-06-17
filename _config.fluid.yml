@@ -948,7 +948,7 @@ links:
       title: "Huan's Log",
       intro: "Bravery never goes out of fashion.",
       link: "https://blog.nekohuan.cyou/",
-      avatar: "https://nekohuan.cyou/req/img/logo/profile@2x.webp"
+      avatar: "https://cdn.jsdelivr.net/gh/kuohuanhuan/cdn@master/profile@2x.webp"
     }
     - {
       title: "Zhuym的博客",
