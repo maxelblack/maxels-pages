@@ -3,10 +3,10 @@ layout: post
 title: "Arch Linux 安装指引"
 categories: [ "Linux", "教程" ]
 index_img: r/pic/SCS_ARCHISO_202104.png
-date: 2021-04-24
+date: 2021-04-24 14:08:12
 ---
 
-<div style="font-size:1.5em;">At first, ARCH IS THE BEST!</div>
+<div style="font-size:1.6em;">ARCH IS THE BEST!</div>
 
 按照 [Arch Wiki](https://wiki.archlinux.org/title/Arch_Linux) 的说法，Arch Linux 是一个简洁、现代、实用且以用户为中心的 GNU/Linux 发行版，采用滚动更新模式，尽全力提供最新的稳定版软件。<!--MORE-->
 
@@ -323,7 +323,23 @@ P.S.: `localdomain` 若无特殊需求可以直接写为 `localdomain` ，通常
 
 Arch Linux 使用 Pacman 管理软件包，可以通过 `pacman -S package` 来安装软件，其中 `package` 是软件包名或包组名（可以通过直接安装包组来同时安装多个软件包）。
 
-命令行终端下常用的软件包包括 `nano`(文本编辑器), `tmux`(分屏终端), `screen`(后台任务终端) 等，另外也可以参照[这里](https://wiki.archlinux.org/title/Desktop_environment)安装一个桌面环境以方便使用。
+命令行终端下常用的软件包包括 `tmux`(分屏终端) , `htop`(任务管理器) , `screen`(后台终端) 等，另外也可以参照[这里](https://wiki.archlinux.org/title/Desktop_environment)安装一个桌面环境以方便使用。
+
+同时安装几个必备的软件包：
+
+```shell
+pacman -S sudo nano vim
+```
+
+这里强烈建议给 `vim` 创建一个软链接来兼容需要 `vi` 的旧软件，而不是安装一个极其难用的 `vi` 。
+
+使用以下命令创建这个软链接：
+
+```shell
+ln -s /usr/bin/vim /usr/bin/vi
+```
+
+如果之前安装了 GRUB ，还需要在新系统中也安装 `grub` 包以方便以后的配置和修改。
 
 ### 用户
 
